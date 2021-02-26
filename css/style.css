@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #202020;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 9;
+
+  background-color: #f1f1f1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  padding: 22px 0;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin-left: 11px;
+  margin-right: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: #202020;
+}
+
+.login {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: #202020;
+}
+
+/* Главная секция */
+
+.hero {
+  margin-top: 62px;
+  padding-top: 62px;
+  padding-bottom: 71px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.image-block {
+  position: relative;
+
+  margin-right: 122px;
+}
+
+.sale-label {
+  position: absolute;
+  top: 23px;
+  right: 0;
+
+  padding: 12px 17px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #ffffff;
+  background-color: #c93535;
+}
+
+.author {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.title {
+  font-family: "MuseoCyrl-900", serif;
+  font-size: 54px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.info-text {
+  flex-basis: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.pricetag {
+  margin-right: 64px;
+
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.favorites-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.favorites {
+  margin-left: 7px;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  width: 250px;
+
+  font-size: 16px;
+  font-weight: 700;
+  padding: 19px;
+
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.button-primary {
+  background-color: #f89c02;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.button-outline {
+  display: inline-block;
+  color: #f89c02;
+  border: 2px solid #f89c02;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* О книге */
+.about {
+  background-color: #f1f1f1;
+  padding: 99px 0;
+}
+
+.about-book {
+  max-width: 454px;
+  flex-shrink: 0;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  padding: 68px 63px;
+
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  margin-right: 21px;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-text {
+  flex-basis: 100%;
+  margin-top: 24px;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.author-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Читатели */
+
+.readers {
+  padding-top: 87px;
+  padding-bottom: 79px;
+}
+
+.readers-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.readers-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reader-photo {
+  width: 165px;
+  height: 165px;
+  margin-bottom: 30px;
+
+  object-fit: cover;
+}
+
+/* ----------------------Подвал ---------------------------*/
+
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 15px;
+}
+
+.list-link {
+  text-decoration: none;
+  color: inherit;
+}
+.to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 960px;
+  }
+  .image-block {
+    margin-right: 30px;
+    max-width: 390px;
+    min-width: 390px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  .readers {
+    padding-bottom: 64px;
+  }
+  .reader-photo {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .sale-label {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .author {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+  .info {
+    margin-bottom: 0px;
+  }
+  .info-text {
+    flex-basis: 45%;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .button {
+    width: 200px;
+    height: 48px;
+    padding: 13px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    min-width: 100%;
+    margin-bottom: 46px;
+  }
+  .reader-photo {
+    width: 165px;
+    height: 165px;
+  }
+  .reader-photo:nth-last-child(-n + 4) {
+    display: none;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 560px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .about {
+    padding: 80px 0;
+  }
+  .readers {
+    padding-top: 80px;
+  }
+  .reader-photo:nth-last-child(-n + 6) {
+    display: none;
+  }
+  .footer-container {
+    padding-top: 0;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  .footer-list {
+    margin-right: 40px;
+  }
+  .footer-title {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 90%;
+  }
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+  .favorites {
+    display: none;
+  }
+  .pricetag {
+    margin-right: 20px;
+  }
+  .button {
+    width: 100%;
+  }
+  .button-primary {
+    margin-bottom: 20px;
+  }
+  .about {
+    padding: 0;
+  }
+  .about-container {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .about-book {
+    max-width: 90%;
+    margin-bottom: 54px;
+  }
+  .about-author {
+    padding: 54px 44px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
+  .readers {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .reader-photo {
+    width: 144px;
+    height: 144px;
+  }
+  .footer-container {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .footer-list {
+    margin-right: 45px;
+  }
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .reader-photo {
+    width: 30%;
+    height: 30%;
+  }
+}
+@media (max-width: 380px) {
+  .about-author {
+    padding: 32px 16px;
+  }
+  .sale-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 90%;
+  }
+  .sale-label {
+    display: none;
+  }
+  .image-block {
+    margin-bottom: 43px;
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .info {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .price {
+    margin-bottom: 35px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    width: 90%;
+    height: 60px;
+    padding: 19px;
+  }
+  .button-primary {
+    margin-right: 0;
+  }
+  .about-container {
+    margin-bottom: 0;
+    padding-bottom: 54px;
+  }
+  .about-book {
+    margin-bottom: 40px;
+  }
+  .about-author {
+    justify-content: space-between;
+    padding: 32px 16px;
+  }
+  .author-avatar {
+    margin-right: 13px;
+  }
+  .author-bio {
+    max-width: 142px;
+  }
+  .author-link {
+    font-size: 14px;
+  }
+  .readers {
+    padding-bottom: 30px;
+  }
+  .reader-photo {
+    width: 124px;
+    height: 124px;
+  }
+  .reader-photo:nth-last-child(-n + 8) {
+    display: none;
+  }
+  .footer-list {
+    margin-right: 0;
+  }
+  .footer-title {
+    margin-top: 35px;
+  }
+}
